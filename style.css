@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#body1{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.click{
+    background:linear-gradient(90deg,rgba(255, 0, 0, 0.367), rgba(0, 0, 255, 0.323), rgba(255, 166, 0, 0.384), rgba(255, 255, 0, 0.274), rgb(237, 75, 75));
+    width: 300px;
+    height: 100px;
+    aspect-ratio: 3,1;
+    border-radius: 15px;
+    font-size: 3rem;
+}
+.click:hover{
+    cursor: pointer;
+    background-color: rgb(211, 211, 219);
+}
+.point{
+    height: 200px;
+    margin-top: 50px;
+    animation: move 1s cubic-bezier(0.48, 0.67, 0.62, 0.79) infinite alternate;
+}
+@keyframes move {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(50px);
+    }
+}
+
+/* other part of page */
